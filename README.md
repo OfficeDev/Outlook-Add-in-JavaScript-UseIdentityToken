@@ -53,7 +53,7 @@ The sample solution contains the following key files:
 <a name="codedescription"></a>
 ##Description of the code
 This sample shows how to use a client token from the Exchange server to provide authentication for users of your mail add-in. The Exchange server issues a token that is unique to the mailbox 
-	on the server. You can use this token to associate a mailbox with services that you provide to a mail sdd-in.
+	on the server. You can use this token to associate a mailbox with services that you provide to a mail add-in.
 
 The sample is divided in two parts:  
 - A mail add-in for Outlook that runs in your email client. It requests an identity token from the Exchange server and sends this token to the web service.
