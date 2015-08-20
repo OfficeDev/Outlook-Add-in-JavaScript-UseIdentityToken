@@ -99,10 +99,10 @@ You might encounter following issues when you use Outlook Web App to test a mail
 
 <a name="additional-resources"></a>
 ## Additional resources
-
+- [Office Add-ins](https://msdn.microsoft.com/library/office/jj220060.aspx) documentation on MSDN
 - [Web API: The Official Microsoft ASP.NET Site](http://www.asp.net/web-api)  
 - [Authenticating a mail add-in by using Exchange 2013 identity tokens](http://msdn.microsoft.com/library/c0520a1e-d9ba-495a-a99f-6816d7d2a23e)  
-
+- [More Add-in samples](https://github.com/OfficeDev?utf8=%E2%9C%93&query=-Add-in)
 
 ## Copyright
 Copyright (c) 2015 Microsoft. All rights reserved.
