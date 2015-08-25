@@ -16,14 +16,7 @@ var serviceURL = "https://localhost:44311/api/IdentityToken/";
     Office.initialize = function (reason) {
         $(document).ready(function () {
             app.initialize();
-
-            initApp();
         });
-    };
-
-    // Initialize the mail app for Outlook.
-    function initApp() {
-        $("#content-footer").hide();
     };
 })();
 
@@ -73,9 +66,9 @@ function requestReadyStateChange() {
 
         if (response.isValidToken) {
             if (response.isKnown) {
+
                 // The response indicates that the server recognized the 
                 // client identity. Update the instructions and show the response.
-
                 var first = document.getElementById("first");
                 first.setAttribute("class", "hiddenPage");
                 var second = document.getElementById("second");
@@ -83,6 +76,7 @@ function requestReadyStateChange() {
 
                 app.showNotification("Response", response.message);
             } else {
+
                 // The response indicates that the server did not 
                 // recognize the client identity. Get credentials from the user.
                 getCredentials();

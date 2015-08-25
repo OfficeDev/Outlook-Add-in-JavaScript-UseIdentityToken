@@ -20,14 +20,10 @@ This sample shows how to use a client token from the Exchange server to provide 
 
 This sample requires the following:  
 
-  - Visual Studio 2013 with Update 5 or Visual Studio 2015. 
+  - Visual Studio 2013 (Update 5) or Visual Studio 2015, with Microsoft Office Developer Tools. 
   - A computer running Exchange 2013 with at least one email account, or an Office 365 account. You can [sign up for an Office 365 Developer subscription](http://aka.ms/o365-android-connect-signup) and get an Office 365 account through it.
   - Any browser that supports ECMAScript 5.1, HTML5, and CSS3, such as Internet Explorer 9, Chrome 13, Firefox 5, Safari 5.0.6, or a later version of these browsers.
-  - Microsoft.Exchange.WebServices.Auth.dll  - You can install this from the Package Manager Console: 
-	- Install-Package EWS-Api-2.1  
-  - Microsoft.IdentityModel.dll and Microsoft.IdentityModel.Extensions.dll - You can install these from the Package Manager Console: 
-	- Install-Package Microsoft.Identity.Model.Extensions  
-	- Install-Package Microsoft.Identity.Model  
+  - Microsoft.Exchange.WebServices.Auth.dll, Microsoft.IdentityModel.dll, and Microsoft.IdentityModel.Extensions.dll.
   - Familiarity with JavaScript programming and web services.
 
 <a name="components"></a>
@@ -74,7 +70,11 @@ This sample requires a valid server certificate on the Exchange server. If the E
 ## Build and debug ##
 The add-in will be activated on any email message in the user's Inbox. You can make it easier to test the add-in by sending one or more email messages to your test account before you run the sample.
 
-1. Open the solution in Visual Studio, and press F5 to build the sample. 
+1. Open the solution in Visual Studio. If needed, install the required packages from the Package Manager Console (**Tools > NuGet Package Manager > Package Manager Console**): 
+	- Install-Package EWS-Api-2.1 
+	- Install-Package Microsoft.IdentityModel  
+	- Install-Package Microsoft.Identity.Model.Extensions  
+2. Make sure that  and press F5 to build the sample. 
 2. Connect to an Exchange account by providing the email address and password for an Exchange 2013 server, and allow the server to configure the email account.  
 3. In the browser, log on with the email account by entering the account name and password.  
 4. Select a message in the Inbox, and click **Use Identity Token** in the add-in bar that renders above the message.  

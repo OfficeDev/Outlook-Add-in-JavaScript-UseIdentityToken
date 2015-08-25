@@ -8,7 +8,6 @@
     <title></title>
     <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
 
-    <link href="../../Content/Office.css" rel="stylesheet" type="text/css" />
     <link href="../../Content/fabric.min.css" rel="stylesheet" />
     <link href="../../Content/fabric.components.min.css" rel="stylesheet" /> >
     <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
@@ -25,8 +24,7 @@
 </head>
 
 <body>
-    <!-- Page content -->
-    <div id="content-main">
+    <div class="ms-font-m" id="content-main">
         <div class="padding">
             <div id="header">
                 <h1>Use an Identity Token</h1>
@@ -34,7 +32,6 @@
                 <p id="second" class="hiddenPage">Click the button again to use the service without entering a username and password.</p>
                 <p>
                     <button class="ms-Button ms-Button--primary" onclick="useIdentityToken()">
-                        <span class="ms-Button-icon"><i class="ms-Icon ms-Icon--plus"></i></span>
                         <span class="ms-Button-label">Send unique Exchange ID to service</span>
                     </button>
                 </p>
@@ -43,7 +40,7 @@
                 <h2>Log in:</h2>
                 <div class="ms-Table">
                     <div class="ms-Table-row">
-                        <span class="ms-Table-cell">Credentials</span>
+                        <span class="ms-Table-cell ms-font-m-plus">Credentials</span>
                         <span class="ms-Table-cell"></span>
                     </div>
                     <div class="ms-Table-row">
@@ -57,8 +54,7 @@
                     <div class="ms-Table-row">
                         <span class="ms-Table-cell"></span>
                         <span class="ms-Table-cell">
-                            <button class="ms-Button ms-Button--primary" onclick="login()">
-                                <span class="ms-Button-icon"><i class="ms-Icon ms-Icon--plus"></i></span>
+                            <button class="ms-Button" onclick="login()">
                                 <span class="ms-Button-label">Log in</span>
                             </button>
                         </span>
