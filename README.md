@@ -23,7 +23,10 @@ This sample requires the following:
   - Visual Studio 2013 (Update 5) or Visual Studio 2015, with Microsoft Office Developer Tools. 
   - A computer running Exchange 2013 with at least one email account, or an Office 365 account. You can [sign up for an Office 365 Developer subscription](http://aka.ms/o365-android-connect-signup) and get an Office 365 account through it.
   - Any browser that supports ECMAScript 5.1, HTML5, and CSS3, such as Internet Explorer 9, Chrome 13, Firefox 5, Safari 5.0.6, or a later version of these browsers.
-  - Microsoft.Exchange.WebServices.Auth.dll, Microsoft.IdentityModel.dll, and Microsoft.IdentityModel.Extensions.dll.
+  - Microsoft.Exchange.WebServices.Auth.dll, Microsoft.IdentityModel.dll, and Microsoft.IdentityModel.Extensions.dll. You can install the required packages from the Package Manager Console (**Tools > NuGet Package Manager > Package Manager Console**): 	- Install-Package EWS-Api-2.1 
+	- Install-Package Microsoft.IdentityModel  
+	- Install-Package Microsoft.Identity.Model.Extensions  
+  - [ASP.NET MVC 4](http://www.asp.net/mvc/mvc4).
   - Familiarity with JavaScript programming and web services.
 
 <a name="components"></a>
@@ -32,19 +35,19 @@ The sample solution contains the following key files:
 
 **UseIdentityToken** project
 
-- UseIdentityToken.xml: The manifest file for the mail add-in for Outlook.
+- [```UseIdentityToken.xml```](UseIdentityToken/UseIdentityTokenManifest/UseIdentityToken.xml): The manifest file for the mail add-in for Outlook.
 
 **UseIdentityTokenWeb** project
 
-- AppRead\Home\Home.html: The HTML user interface for the add-in.
-- AppRead\Home\Home.js: The logic that handles requesting and using the identity token.
+- [```AppRead/Home/Home.html```](UseIdentityTokenWeb/AppRead/Home/Home.html): The HTML user interface for the add-in.
+- [```AppRead/Home/Home.js```](UseIdentityTokenWeb/AppRead/Home/Home.js): The logic that handles requesting and using the identity token.
 
 **UseIdentityTokenService** project
 
-- App_Start\WebApiConfig.cs: Binds the default routing for the Web API service.
-- Controllers\IdentityTokenController.cs: The service object that provides the business logic for the sample Web API service.
-- Models\ServiceRequest.cs: The object that represents a web request. The contents of the object are created from a JSON request object sent from the add-in.
-- Models\ServiceResponse.cs: The object that represents a response from the web service. The contents of the object are serialized to a JSON object when they are sent back to the add-in.
+- [```App_Start/WebApiConfig.cs```](UseIdentityTokenService/App_Start/WebApiConfig.cs): Binds the default routing for the Web API service.
+- [```Controllers/IdentityTokenController.cs```](UseIdentityTokenService/Controllers/IdentityTokenController.cs): The service object that provides the business logic for the sample Web API service.
+- [```Models/ServiceRequest.cs```](UseIdentityTokenService/Models/ServiceRequest.cs): The object that represents a web request. The contents of the object are created from a JSON request object sent from the add-in.
+- [```Models/ServiceResponse.cs```](UseIdentityTokenService/Models/ServiceResponse.cs): The object that represents a response from the web service. The contents of the object are serialized to a JSON object when they are sent back to the add-in.
 
 <a name="codedescription"></a>
 ##Description of the code
@@ -70,11 +73,7 @@ This sample requires a valid server certificate on the Exchange server. If the E
 ## Build and debug ##
 The add-in will be activated on any email message in the user's Inbox. You can make it easier to test the add-in by sending one or more email messages to your test account before you run the sample.
 
-1. Open the solution in Visual Studio. If needed, install the required packages from the Package Manager Console (**Tools > NuGet Package Manager > Package Manager Console**): 
-	- Install-Package EWS-Api-2.1 
-	- Install-Package Microsoft.IdentityModel  
-	- Install-Package Microsoft.Identity.Model.Extensions  
-2. Make sure that  and press F5 to build the sample. 
+1. Open the solution in Visual Studio, and press F5 to build the sample. 
 2. Connect to an Exchange account by providing the email address and password for an Exchange 2013 server, and allow the server to configure the email account.  
 3. In the browser, log on with the email account by entering the account name and password.  
 4. Select a message in the Inbox, and click **Use Identity Token** in the add-in bar that renders above the message.  
@@ -96,6 +95,8 @@ You might encounter following issues when you use Outlook Web App to test a mail
 
 - If you have any trouble running this sample, please [log an issue](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-UseIdentityToken/issues).
 - Questions about Office Add-in development in general should be posted to [Stack Overflow](http://stackoverflow.com/questions/tagged/office-addins). Make sure that your questions or comments are tagged with [office-addins].
+
+If the add-in loads but does not run, try to build the solution in Visual Studio (**Build > Build Solution**). Check the Error List for missing dependencies and add them as needed.
 
 <a name="additional-resources"></a>
 ## Additional resources
