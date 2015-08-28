@@ -80,7 +80,8 @@ The add-in will be activated on any email message in the user's Inbox. You can m
 5. Click the **Send unique Exchange ID to service** button to send a request to the Exchange server.  
 6. The server will prompt you to log on. You can type anything in the service user name and password boxes. This sample does not validate the contents of the text boxes.  
 7. Click the **Send unique Exchange ID to service** button again. This time, a response is returned from the server without a request for a user name and password.  
-8. If you have another email message in your Inbox, you can switch to that email message, show the **Use Identity Token** add-in, and click the button again. The response will be returned from the server without a request for a user name or password.
+
+If you have another email message in your Inbox, you can switch to that email message, show the **Use Identity Token** add-in, and click the button again. The response will be returned from the server without a request for a user name or password.
 
 
 <a name="troubleshooting"></a>
@@ -90,13 +91,13 @@ You might encounter following issues when you use Outlook Web App to test a mail
 - The add-in bar does not appear when a message is selected. If this occurs, restart the add-in by selecting **Debug - Stop Debugging** in the Visual Studio window, then press F5 to rebuild and deploy the add-in.  
 - Changes to the JavaScript code might not be picked up when you deploy and run the add-in. If the changes are not picked up, clear the cache on the web browser by selecting **Tools - Internet options** and selecting the **Delete** button. Delete the temporary Internet files and then restart the add-in.
 
+If the add-in loads but does not run, try to build the solution in Visual Studio (**Build > Build Solution**). Check the Error List for missing dependencies and add them as needed.
+
 <a name="questions"></a>
 ## Questions and comments
 
 - If you have any trouble running this sample, please [log an issue](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-UseIdentityToken/issues).
 - Questions about Office Add-in development in general should be posted to [Stack Overflow](http://stackoverflow.com/questions/tagged/office-addins). Make sure that your questions or comments are tagged with [office-addins].
-
-If the add-in loads but does not run, try to build the solution in Visual Studio (**Build > Build Solution**). Check the Error List for missing dependencies and add them as needed.
 
 <a name="additional-resources"></a>
 ## Additional resources
