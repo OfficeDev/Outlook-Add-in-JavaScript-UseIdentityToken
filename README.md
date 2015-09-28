@@ -35,19 +35,19 @@ The sample solution contains the following key files:
 
 **UseIdentityToken** project
 
-- [```UseIdentityToken.xml```](UseIdentityToken/UseIdentityTokenManifest/UseIdentityToken.xml): The manifest file for the mail add-in for Outlook.
+- [```UseIdentityToken.xml```](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-UseIdentityToken/blob/master/UseIdentityToken/UseIdentityTokenManifest/UseIdentityToken.xml): The manifest file for the mail add-in for Outlook.
 
 **UseIdentityTokenWeb** project
 
-- [```AppRead/Home/Home.html```](UseIdentityTokenWeb/AppRead/Home/Home.html): The HTML user interface for the add-in.
-- [```AppRead/Home/Home.js```](UseIdentityTokenWeb/AppRead/Home/Home.js): The logic that handles requesting and using the identity token.
+- [```AppRead/Home/Home.html```](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-UseIdentityToken/blob/master/UseIdentityTokenWeb/AppRead/Home/Home.html): The HTML user interface for the add-in.
+- [```AppRead/Home/Home.js```](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-UseIdentityToken/blob/master/UseIdentityTokenWeb/AppRead/Home/Home.js): The logic that handles requesting and using the identity token.
 
 **UseIdentityTokenService** project
 
-- [```App_Start/WebApiConfig.cs```](UseIdentityTokenService/App_Start/WebApiConfig.cs): Binds the default routing for the Web API service.
-- [```Controllers/IdentityTokenController.cs```](UseIdentityTokenService/Controllers/IdentityTokenController.cs): The service object that provides the business logic for the sample Web API service.
-- [```Models/ServiceRequest.cs```](UseIdentityTokenService/Models/ServiceRequest.cs): The object that represents a web request. The contents of the object are created from a JSON request object sent from the add-in.
-- [```Models/ServiceResponse.cs```](UseIdentityTokenService/Models/ServiceResponse.cs): The object that represents a response from the web service. The contents of the object are serialized to a JSON object when they are sent back to the add-in.
+- [```App_Start/WebApiConfig.cs```](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-UseIdentityToken/blob/master/UseIdentityTokenService/App_Start/WebApiConfig.cs): Binds the default routing for the Web API service.
+- [```Controllers/IdentityTokenController.cs```](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-UseIdentityToken/blob/master/UseIdentityTokenService/Controllers/IdentityTokenController.cs): The service object that provides the business logic for the sample Web API service.
+- [```Models/ServiceRequest.cs```](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-UseIdentityToken/blob/master/UseIdentityTokenService/Models/ServiceRequest.cs): The object that represents a web request. The contents of the object are created from a JSON request object sent from the add-in.
+- [```Models/ServiceResponse.cs```](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-UseIdentityToken/blob/master/UseIdentityTokenService/Models/ServiceResponse.cs): The object that represents a response from the web service. The contents of the object are serialized to a JSON object when they are sent back to the add-in.
 
 <a name="codedescription"></a>
 ##Description of the code
