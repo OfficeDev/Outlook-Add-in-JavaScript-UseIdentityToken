@@ -1,8 +1,9 @@
 # Outlook Add-in: Use a client identity token
 
+This sample shows how to use a client token from the Exchange server to provide authentication for users of your mail add-in for Outlook. 
+
 **Table of contents**
 
-* [Summary](#summary)
 * [Prerequisites](#prerequisites)
 * [Key components of the sample](#components)
 * [Description of the code](#codedescription)
@@ -11,12 +12,8 @@
 * [Questions and comments](#questions)
 * [Additional resources](#additional-resources)
 
-<a name="summary"></a>
-##Summary
-This sample shows how to use a client token from the Exchange server to provide authentication for users of your mail add-in for Outlook. 
-
 <a name="prerequisites"></a>
-## Prerequisites ##
+## Prerequisites 
 
 This sample requires the following:  
 
@@ -70,16 +67,16 @@ This sample requires a valid server certificate on the Exchange server. If the E
 
 
 <a name="build"></a>
-## Build and debug ##
+## Build and debug 
 The add-in will be activated on any email message in the user's Inbox. You can make it easier to test the add-in by sending one or more email messages to your test account before you run the sample.
 
 1. Open the solution in Visual Studio, and press F5 to build the sample. 
 2. Connect to an Exchange account by providing the email address and password for an Exchange 2013 server, and allow the server to configure the email account.  
 3. In the browser, log on with the email account by entering the account name and password.  
 4. Select a message in the Inbox, and click **Use Identity Token** in the add-in bar that renders above the message.  
-5. Click the **Send unique Exchange ID to service** button to send a request to the Exchange server.  
+5. Choose **Send unique Exchange ID to service** to send a request to the Exchange server.  
 6. The server will prompt you to log on. You can type anything in the service user name and password boxes. This sample does not validate the contents of the text boxes.  
-7. Click the **Send unique Exchange ID to service** button again. This time, a response is returned from the server without a request for a user name and password.  
+7. Choose **Send unique Exchange ID to service** again. This time, a response is returned from the server without a request for a user name and password.  
 
 If you have another email message in your Inbox, you can switch to that email message, show the **Use Identity Token** add-in, and click the button again. The response will be returned from the server without a request for a user name or password.
 
