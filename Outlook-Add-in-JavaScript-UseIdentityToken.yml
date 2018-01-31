@@ -1,0 +1,19 @@
+### YamlMime:Sample
+sample:
+- name: 'Outlook add-in: Use a client identity token'
+  path: ''
+  description: This sample shows how to use a client token from the Exchange server to provide authentication for users of your mail add-in for Outlook.
+  readme: ''
+  generateZip: FALSE
+  isLive: TRUE
+  technologies:
+  - Office Add-in
+  azureDeploy: ''
+  author: jamescro
+  platforms: []
+  languages:
+  - JavaScript
+  extensions:
+    products:
+    - Outlook
+    scenarios: []
