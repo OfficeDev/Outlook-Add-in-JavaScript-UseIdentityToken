@@ -1,3 +1,16 @@
+---
+topic: sample
+products:
+- Outlook
+- Office 365
+languages:
+- JavaScript
+extensions:
+  contentType: samples
+  technologies:
+  - Add-ins
+  createdDate: 8/14/2015 12:52:42 PM
+---
 # Outlook Add-in: Use a client identity token
 
 **Table of contents**
