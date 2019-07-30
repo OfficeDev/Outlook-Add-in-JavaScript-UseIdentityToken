@@ -5,6 +5,7 @@ products:
 - office-365
 languages:
 - javascript
+description: This sample shows how to use a client token from the Exchange server to provide authentication for users of your mail add-in for Outlook.
 extensions:
   contentType: samples
   technologies:
@@ -25,7 +26,7 @@ extensions:
 * [Additional resources](#additional-resources)
 
 <a name="summary"></a>
-##Summary
+## Summary
 This sample shows how to use a client token from the Exchange server to provide authentication for users of your mail add-in for Outlook. 
 
 <a name="prerequisites"></a>
