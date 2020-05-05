@@ -64,7 +64,7 @@ The sample solution contains the following key files:
 - [```Models/ServiceResponse.cs```](https://github.com/OfficeDev/Outlook-Add-in-JavaScript-UseIdentityToken/blob/master/UseIdentityTokenService/Models/ServiceResponse.cs): The object that represents a response from the web service. The contents of the object are serialized to a JSON object when they are sent back to the add-in.
 
 <a name="codedescription"></a>
-##Description of the code
+## Description of the code
 This sample shows how to use a client token from the Exchange server to provide authentication for users of your mail add-in. The Exchange server issues a token that is unique to the mailbox 
 	on the server. You can use this token to associate a mailbox with services that you provide to a mail add-in.
 
